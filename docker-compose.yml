@@ -1,0 +1,45 @@
+name: tasbolatov-temirlan-student-api
+
+services:
+  db:
+    image: postgres:16
+    container_name: tasbolatov-temirlan-postgres
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-studentdb}
+      POSTGRES_USER: ${POSTGRES_USER:-student}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-student}
+    volumes:
+      - tasbolatov-temirlan-pgdata:/var/lib/postgresql/data
+    networks:
+      - tasbolatov-temirlan-net
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-student} -d ${POSTGRES_DB:-studentdb}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    restart: unless-stopped
+
+  app:
+    build: .
+    image: tasbolatov-temirlan-student-api:${APP_TAG:-v1.0-tasbolatov-temirlan}
+    container_name: tasbolatov-temirlan-app
+    environment:
+      # "db" is the Docker service name, NOT localhost
+      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/${POSTGRES_DB:-studentdb}
+      SPRING_DATASOURCE_USERNAME: ${POSTGRES_USER:-student}
+      SPRING_DATASOURCE_PASSWORD: ${POSTGRES_PASSWORD:-student}
+    ports:
+      - "8080:8080"
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - tasbolatov-temirlan-net
+    restart: unless-stopped
+
+volumes:
+  tasbolatov-temirlan-pgdata:
+
+networks:
+  tasbolatov-temirlan-net:
+    driver: bridge

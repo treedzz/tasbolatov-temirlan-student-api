@@ -1,0 +1,4 @@
+4:Student:        Tasbolatov Temirlan
+34:Report by Tasbolatov Temirlan finished.
+39:Student:        Tasbolatov Temirlan
+69:Report by Tasbolatov Temirlan finished.

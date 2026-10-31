@@ -1,0 +1,70 @@
+==========================================
+ SYSTEM REPORT
+==========================================
+Student:        Tasbolatov Temirlan
+Date and time:  2026-11-01 04:40:57
+Username:       root
+
+--- Operating system ---
+Ubuntu 24.04.5 LTS
+Kernel:         7.0.14-linuxkit
+
+--- CPU ---
+Architecture:                            aarch64
+CPU(s):                                  10
+Model name:                              -
+
+--- Memory ---
+               total        used        free      shared  buff/cache   available
+Mem:           7.7Gi       607Mi       6.7Gi       500Ki       583Mi       7.2Gi
+Swap:          1.0Gi          0B       1.0Gi
+
+--- Disk usage ---
+Filesystem            Size  Used Avail Use% Mounted on
+overlay               224G  1.2G  212G   1% /
+tmpfs                  64M     0   64M   0% /dev
+shm                    64M     0   64M   0% /dev/shm
+/run/host_mark/Users  229G  111G  119G  49% /devops
+/dev/vda1             224G  1.2G  212G   1% /etc/hosts
+tmpfs                 4.0K     0  4.0K   0% /proc/scsi
+
+--- Available disk space on / ---
+Available: 212G of 224G (1% used)
+
+Report by Tasbolatov Temirlan finished.
+
+==========================================
+ SYSTEM REPORT
+==========================================
+Student:        Tasbolatov Temirlan
+Date and time:  2026-11-01 04:43:51
+Username:       root
+
+--- Operating system ---
+Ubuntu 24.04.5 LTS
+Kernel:         7.0.14-linuxkit
+
+--- CPU ---
+Architecture:                            aarch64
+CPU(s):                                  10
+Model name:                              -
+
+--- Memory ---
+               total        used        free      shared  buff/cache   available
+Mem:           7.7Gi       551Mi       6.8Gi       500Ki       583Mi       7.2Gi
+Swap:          1.0Gi          0B       1.0Gi
+
+--- Disk usage ---
+Filesystem            Size  Used Avail Use% Mounted on
+overlay               224G  1.2G  212G   1% /
+tmpfs                  64M     0   64M   0% /dev
+shm                    64M     0   64M   0% /dev/shm
+/run/host_mark/Users  229G  111G  119G  49% /devops
+/dev/vda1             224G  1.2G  212G   1% /etc/hosts
+tmpfs                 4.0K     0  4.0K   0% /proc/scsi
+
+--- Available disk space on / ---
+Available: 212G of 224G (1% used)
+
+Report by Tasbolatov Temirlan finished.
+
