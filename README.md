@@ -4,7 +4,7 @@ Author: Tasbolatov Temirlan
 
 Spring Boot CRUD application for managing students, with PostgreSQL, Docker Compose and a Jenkins pipeline.
 
-Project status: initial version
+Project status: stable version 1.0
 
 ## Stack
 
