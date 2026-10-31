@@ -40,3 +40,7 @@ Example body:
 ## Docker image
 
 `tasbolatov-temirlan-student-api:v1.0-tasbolatov-temirlan`
+
+## Changes by Tasbolatov Temirlan
+
+- Added endpoint `GET /api/students/search?lastName=...` to find students by last name (case-insensitive).
