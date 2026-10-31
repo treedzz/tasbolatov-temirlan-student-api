@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -38,6 +39,13 @@ public class StudentController {
     @GetMapping
     public List<Student> getAll() {
         return repository.findAll();
+    }
+
+    // READ by last name (improvement by Tasbolatov Temirlan)
+    // Example: GET /api/students/search?lastName=Tasbolatov
+    @GetMapping("/search")
+    public List<Student> searchByLastName(@RequestParam String lastName) {
+        return repository.findByLastNameIgnoreCase(lastName);
     }
 
     // READ one
