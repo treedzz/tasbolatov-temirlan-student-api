@@ -47,3 +47,4 @@ Example body:
 
 CI auto-trigger test by Tasbolatov Temirlan
 Auto-trigger check by Tasbolatov Temirlan
+Auto-trigger final check by Tasbolatov Temirlan
