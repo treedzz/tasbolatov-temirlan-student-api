@@ -46,3 +46,4 @@ Example body:
 - Added endpoint `GET /api/students/search?lastName=...` to find students by last name (case-insensitive).
 
 CI auto-trigger test by Tasbolatov Temirlan
+Auto-trigger check by Tasbolatov Temirlan
